@@ -1,0 +1,61 @@
+
+
+### GET
+#############################################################################################
+GET http://localhost:3000/api/todos
+
+###
+GET http://localhost:3000/api/todos
+?limit=3
+&search=b
+&sort_by=id
+&sort_order=ASC
+
+###
+GET http://localhost:3000/api/todos
+?category=3
+
+###
+GET http://localhost:3000/api/todos/1
+
+
+
+### POST
+#############################################################################################
+POST http://localhost:3000/api/todos HTTP/1.1
+content-type: application/json 
+
+{
+    "title":"Another one again",
+    "description": "Test",
+    "completed": "false",
+    "priority":"low",
+    "category_id": 2,
+    "id":19
+}
+
+
+### PUT
+#############################################################################################
+PUT http://localhost:3000/api/todos/1 HTTP/1.1
+content-type: application/json 
+
+{
+    "description":"Chocolate",
+    "category_id": 3
+}
+
+
+### DELETE
+#############################################################################################
+DELETE  http://localhost:3000/api/todos/1
+
+### PATCH
+#############################################################################################
+PATCH  http://localhost:3000/api/todos/1/complete HTTP/1.1
+content-type: application/json 
+
+{
+    "completed":"true"
+}
+

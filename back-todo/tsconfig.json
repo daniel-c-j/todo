@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        "src/routes/todos.ts",
+        "src/index.ts",
+        "src/routes/categories.ts",
+        "models/category.js",
+        "models/todo.model.ts",
+        "models/category.model.ts",
+        "models/todo.js",
+        "src/db/index.ts",
+        "models/index.js"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

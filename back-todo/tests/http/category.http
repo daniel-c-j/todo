@@ -1,0 +1,33 @@
+
+### GET
+#############################################################################################
+GET http://localhost:3000/api/categories
+
+
+### POST
+#############################################################################################
+POST http://localhost:3000/api/categories HTTP/1.1
+content-type: application/json 
+
+{
+
+    "name": "Alt other",
+    "color": "#8fec9f"
+}
+
+
+### PUT
+#############################################################################################
+PUT http://localhost:3000/api/categories/5 HTTP/1.1
+content-type: application/json 
+
+{
+    "name":"Tex",
+    "color": "#678439"
+}
+
+
+### DELETE
+#############################################################################################
+DELETE  http://localhost:3000/api/categories/1
+
